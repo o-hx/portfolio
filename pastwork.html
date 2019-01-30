@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>portfolio</title>
+
+	<link rel="stylesheet" type="text/css" href="stylez.css">
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Krub" rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="sidebar">
+	<a href="file:///D:/sublime%20files/portfolio/index.html"><img class="logo" src="images\pigeonlog2.png"></a>
+	<h1>HUAN XUAN</h1>
+	<h2>testing helo there</h2>
+	<hr></hr>
+	<ul>
+		<li><a href="file:///D:/sublime%20files/portfolio/pastwork.html">Past work</a></li>
+		<li><a href="file:///D:/sublime%20files/portfolio/ongoing.html">Ongoing projects</a></li>
+		<li>Resume</li>
+		<li><a href="mailto:huanxuann@hotmail.com" target="_top">Contact</a></li>
+	</ul>
+
+	<hr></hr>
+
+
+
+</div>
+
+<div class="content">
+	<h1>Past Work</h1>
+	<hr></hr>
+	<h2>Click on the image for more description of the project.</h2>
+	<div class="card">
+  <img src="images\app_thumb.png" style="width:100%" onclick="appPop()" class="thumbpic">
+  <div class="cardcontainer">
+    <h1><b>menü App</b></h1> 
+    <h2>UI/UX design and development</h2> 
+  </div>
+</div>
+
+	<div class="card">
+  <img src="images\cafe_thumb.png" style="width:100%" onclick="cafePop()" class="thumbpic">
+  <div class="cardcontainer">
+    <h1><b>Churn Creamery</b></h1> 
+    <h2>Signboard, logo and menu design</h2> 
+  </div>
+</div>
+
+	<div class="card">
+  <img src="images\montage_thumb.png" style="width:100%" onclick="montagePop()" class="thumbpic">
+  <div class="cardcontainer">
+    <h1><b>Wedding Montage</b></h1> 
+    <h2>Hand-drawn, animated montage</h2> 
+  </div>
+</div>
+
+	<div class="card">
+  <img src="images\vid_thumb.png" style="width:100%" onclick="vidPop()" class="thumbpic">
+  <div class="cardcontainer">
+    <h1><b>Application Video</b></h1> 
+    <h2>A short animation about myself</h2> 
+  </div>
+</div>
+
+	<div class="card">
+  <img src="images\poster_thumb.png" style="width:100%" onclick="posterPop()" class="thumbpic">
+  <div class="cardcontainer">
+    <h1><b>Posters</b></h1> 
+    <h2>A collection of posters</h2> 
+  </div>
+</div>
+
+
+
+</div>
+
+
+<div id="appModal" class="modal">
+  <div class="modal-content">
+    <span class="appclose">&times;</span>
+    <div class="clearfix"><img src="images\app_img.png" style="height:30%; width:30%" class="popimage">
+    <h1>menü App</h1>
+    <h2>Project for 50.001 - Intro to Information Systems & Programming. menü is a menu builder which allows vendors to quickly list their items and receive cashless payment.</h2>
+    <h2>App features:</h2>
+    <p>• Account registration<br>
+    	• QR code generator (for vendors)<br>
+    	• QR code scanner (for users) to access menu<br>
+    	• Implementation of OCBC PayNow API as payment system<br>
+    • Intuitive menu design</p>
+
+
+
+
+    <h2>My contributions to the project:</h2>
+    <p>• Checkout page design<br>
+    • Pop-up window in main menu - design and development<br>
+    • QR scanner</p></h2>
+
+
+    <h2>Made with Android Studio.</h2>
+
+    </div>
+  </div>
+</div>
+
+<div id="cafeModal" class="modal">
+  <div class="modal-content">
+    <span class="cafeclose">&times;</span>
+    <div class="clearfix"><img src="images\cafe_img1.png" style="height:30%; width:30%" class="popimage">
+    	<img src="images\cafe_img2.png" style="height:30%; width:30%" class="popimage">
+    	    <h1>Churn Creamery</h1>
+    <h2>Signboard, logo and menu design</h2>
+    <p>I aimed for a clean yet polished look for this cafe hidden in the old residential blocks in Tanjong Pagar.  
+    	
+
+	</div>
+
+  </div>
+</div>
+
+ <div id="montageModal" class="modal">
+  <div class="modal-content">
+    <span class="montclose">&times;</span>
+    <div class="clearfix"><img src="images\montagegif.gif" style="height:30%; width:30%" class="popimage">
+    	    <h1>Wedding Montage</h1>
+    <h2>A hand-drawn animated montage for a wedding.</h2>
+    <p>Hoping to bring about a refreshing change from the conventional wedding montages made with PowerPoint slides, I made a whimsical animation video, punctuated with fun elements highlighting the couple's unique traits.</p>
+    <p>View the full video <a href="https://www.youtube.com/watch?v=tcyPSkN6G3M" target="_blank">here</a>. <br><br></p>
+
+    	<p>Made with FireAlpaca, a free drawing software which supports frame-by-frame animation.</p>
+    	
+  </div>
+</div>
+ </div>
+
+ <div id="vidModal" class="modal">
+  <div class="modal-content">
+
+    <span class="vidclose">&times;</span>
+    <div class="clearfix"><img src="images\vidgif.gif" style="height:30%; width:30%" class="popimage">
+    	    <h1>SUTD Application Video</h1>
+    <h2>A short hand-drawn animation for SUTD Admissions 2017.</h2>
+    <p>Reusing the theme from the wedding montage I made awhile back, I decided to submit a short animated clip for the optional self-introduction video part of SUTD' admissions process. </p>
+    <p>View the full video <a href="https://www.youtube.com/watch?v=bF2vLN9jf4w" target="_blank">here</a>. <br><br></p>
+
+    	<p>Made with FireAlpaca, a free drawing software which supports frame-by-frame animation.</p>
+    	
+  </div>
+  </div>
+</div>
+
+
+<div id="posterModal" class="modal">
+  <div class="modal-content">
+
+    <span class="posterclose">&times;</span>
+    <div class="clearfix">
+    	<h1>Posters</h1>
+    	<p>Left: Poster for group project in 3.007: Introduction to Design. My team and I created a product which tracks surrounding environmental conditions for eczema sufferers, and sends alerts to their mobile phones when the conditions exceed safe levels. <br>
+    	Right: Poster for a biology group project.</p>
+    	<img src="images\poster_img.png" style="height:98%; width:98%" class="popimage">
+
+    	<br><br>
+    	    
+    </div>
+
+    	
+  </div>
+</div>
+
+
+</body>
+
+
+<script>
+// Get the modal
+var appmodal = document.getElementById('appModal');
+var cafemodal = document.getElementById('cafeModal');
+var montmodal = document.getElementById('montageModal');
+var vidmodal = document.getElementById('vidModal');
+var postermodal = document.getElementById('posterModal');
+
+// Get the <span> element that closes the modal
+var appspan = document.getElementsByClassName("appclose")[0];
+var cafespan = document.getElementsByClassName("cafeclose")[0];
+var montspan = document.getElementsByClassName("montclose")[0];
+var vidspan = document.getElementsByClassName("vidclose")[0];
+var posterspan = document.getElementsByClassName("posterclose")[0];
+
+// When the user clicks the button, open the modal 
+function appPop() {
+  appModal.style.display = "block";
+}
+function cafePop() {
+  cafeModal.style.display = "block";
+}
+function montagePop() {
+  montageModal.style.display = "block";
+}
+function vidPop() {
+ vidModal.style.display = "block";
+}
+function posterPop() {
+ posterModal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+appspan.onclick = function() {
+  appmodal.style.display = "none";
+}
+cafespan.onclick = function() {
+  cafemodal.style.display = "none";
+}
+montspan.onclick = function() {
+  montmodal.style.display = "none";
+}
+vidspan.onclick = function() {
+  vidmodal.style.display = "none";
+}
+posterspan.onclick = function() {
+  postermodal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</html>
