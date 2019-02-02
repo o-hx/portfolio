@@ -241,5 +241,14 @@ li {
 hr {
 	width: 100%;
 }
+.cardholder {
+	display: flex;
+	flex-direction: column;
+}
+
+.card {
+	width: 90%;
+	height: auto;
+}
 
 }
